@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 const people = [
   { id: 1, name: "Creola Katherine Johnson: mathematician", prof: "mat" },
   { id: 2, name: "Mario José Molina-Pasquel Henríquez: chemist", prof: "che" },
@@ -10,7 +12,9 @@ export default function List() {
   const chemists = people.filter((person) => person.prof === "che");
 
   const listItems = chemists.map((person) => (
-    <li key={person.id}>{person.name}</li>
+    <Fragment key={person.id}>
+      <li>{person.name}</li>
+    </Fragment>
   ));
 
   return <ul>{listItems}</ul>;

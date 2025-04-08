@@ -4,13 +4,20 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
 import List from "./components/Liste";
+import DveListe from "./components/DveListe";
+import Recepti from "./components/Recepti";
+import PureComponent from "./components/PureComponent";
 
+//React ovde u root div u index.html renderuje sve ostalo, sve ove komponente koje se pozivaju u okviru render() funkcije.
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  //<React.StrictMode>
+  //<React.StrictMode> //duplira
   <>
     <App />
-    <List/>
+    <List />
+    <DveListe />
+    <Recepti />
+    <PureComponent />
   </>
   //</React.StrictMode>
 );
