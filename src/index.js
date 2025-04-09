@@ -7,6 +7,8 @@ import List from "./components/Liste";
 import DveListe from "./components/DveListe";
 import Recepti from "./components/Recepti";
 import PureComponent from "./components/PureComponent";
+import Poruka from "./components/PropsHandler";
+import "bootstrap/dist/css/bootstrap.css"; //ovde ukljucujemo bootstrap
 
 //React ovde u root div u index.html renderuje sve ostalo, sve ove komponente koje se pozivaju u okviru render() funkcije.
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -18,6 +20,7 @@ root.render(
     <DveListe />
     <Recepti />
     <PureComponent />
+    <Poruka />
   </>
   //</React.StrictMode>
 );
