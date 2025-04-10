@@ -3,12 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
+import "bootstrap/dist/css/bootstrap.css"; //ovde ukljucujemo bootstrap
 import List from "./components/Liste";
 import DveListe from "./components/DveListe";
 import Recepti from "./components/Recepti";
 import PureComponent from "./components/PureComponent";
 import Poruka from "./components/PropsHandler";
-import "bootstrap/dist/css/bootstrap.css"; //ovde ukljucujemo bootstrap
+import FormReload, { PreventFormReload } from "./components/DefaultBrowser";
+import Stanja from "./components/Stanja";
 
 //React ovde u root div u index.html renderuje sve ostalo, sve ove komponente koje se pozivaju u okviru render() funkcije.
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -21,6 +23,12 @@ root.render(
     <Recepti />
     <PureComponent />
     <Poruka />
+
+    <FormReload />
+    <PreventFormReload />
+
+    <Stanja/>
+
   </>
   //</React.StrictMode>
 );
