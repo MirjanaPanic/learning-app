@@ -17,7 +17,7 @@ export default function FormReload() {
 
 export function PreventFormReload() {
     return (
-      <form
+      <form 
         onSubmit={e => {
         e.preventDefault();
           alert("Submitting!");

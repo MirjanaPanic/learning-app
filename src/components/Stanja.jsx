@@ -103,8 +103,19 @@ export default function Stanja() {
   const [index, setIndex] = useState(0);
   const [showMore, setShowMore] = useState(false);
 
+  let hasPrev = index > 0;
+  let hasNext = index < sculptureList.length - 1;
+
+  function handlePrevClick() {
+    if (hasPrev) {
+      setIndex(index - 1);
+    }
+  }
+
   function handleNextClick() {
-    setIndex(index + 1);
+    if (hasNext) {
+      setIndex(index + 1);
+    }
   }
 
   function handleMoreClick() {
@@ -113,7 +124,13 @@ export default function Stanja() {
 
   let sculpture = sculptureList[index];
   return (
-    <div style={{ backgroundColor: "cyan", margin: "10px" }}>
+    <div style={{ backgroundColor: "cyan" }}>
+      <button onClick={handlePrevClick} disabled={!hasPrev}>
+        Previous
+      </button>
+      <button onClick={handleNextClick} disabled={!hasNext}>
+        Next
+      </button>
       <h2>
         <i>{sculpture.name} </i>
         by {sculpture.artist}
@@ -121,7 +138,6 @@ export default function Stanja() {
       <h3>
         ({index + 1} of {sculptureList.length})
       </h3>
-      <button onClick={handleNextClick}>Next</button>
       <button onClick={handleMoreClick}>
         {showMore ? "Hide" : "Show"} details
       </button>

@@ -11,8 +11,11 @@ import PureComponent from "./components/PureComponent";
 import Poruka from "./components/PropsHandler";
 import FormReload, { PreventFormReload } from "./components/DefaultBrowser";
 import Stanja from "./components/Stanja";
+import Forma from "./components/Forma";
+import Snap from "./components/Snapshot";
 
 //React ovde u root div u index.html renderuje sve ostalo, sve ove komponente koje se pozivaju u okviru render() funkcije.
+//INITIAL RENDER
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   //<React.StrictMode> //duplira
@@ -27,8 +30,9 @@ root.render(
     <FormReload />
     <PreventFormReload />
 
-    <Stanja/>
-
+    <Stanja />
+    <Forma />
+    <Snap />
   </>
   //</React.StrictMode>
 );
