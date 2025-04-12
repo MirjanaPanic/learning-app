@@ -13,6 +13,7 @@ import FormReload, { PreventFormReload } from "./components/DefaultBrowser";
 import Stanja from "./components/Stanja";
 import Forma from "./components/Forma";
 import Snap from "./components/Snapshot";
+import Batch from "./components/Batching";
 
 //React ovde u root div u index.html renderuje sve ostalo, sve ove komponente koje se pozivaju u okviru render() funkcije.
 //INITIAL RENDER
@@ -33,6 +34,7 @@ root.render(
     <Stanja />
     <Forma />
     <Snap />
+    <Batch />
   </>
   //</React.StrictMode>
 );
