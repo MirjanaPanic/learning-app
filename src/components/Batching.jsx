@@ -14,7 +14,7 @@ export default function Batch() {
       <button
         onClick={() => {
           setNumber(number + 5);
-          alert(number);
+          alert(number); //prikazace tekucu vrednost state-a number, a to je 0 (from initial render)
         }}
       >
         +5
