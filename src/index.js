@@ -16,8 +16,9 @@ import Snap from "./components/Snapshot";
 import Batch from "./components/Batching";
 import Snap2 from "./components/Snap";
 import FuncSet from "./components/FunctionalSet";
-import SpreadObj from "./components/SpreadObjects";
+import SpreadObj from "./components/ObjectsState";
 import Immer from "./components/Immer";
+import ArrayAdd from "./components/ArraysState";
 
 //React ovde u root div u index.html renderuje sve ostalo, sve ove komponente koje se pozivaju u okviru render() funkcije.
 //INITIAL RENDER
@@ -43,6 +44,7 @@ root.render(
     <FuncSet />
     <SpreadObj />
     <Immer />
+    <ArrayAdd />
   </>
   //</React.StrictMode>
 );
