@@ -26,3 +26,38 @@ export default function ArrayAdd() {
     </div>
   );
 }
+
+export function ArrayRemove() {
+  let todo = [
+    { id: 1, task: "prepare breakfast" },
+    { id: 2, task: "make a coffee" },
+    { id: 3, task: "clean room" },
+    { id: 4, task: "study session" },
+  ];
+
+  const [tasks, setTasks] = useState(todo);
+
+  return (
+    <div style={{ backgroundColor: "lavender" }}>
+      <h1> To do: </h1>
+      <ul>
+        {tasks.map((t) => (
+          <>
+            <li key={t.id}> {t.task}</li>
+            <button
+              onClick={() => {
+                //imam t.id i t.task dostupno, uhvacen task koji je kliknut i treba da se obrise
+                let unfinished = tasks.filter((td) => td.id !== t.id);
+                console.log(unfinished);
+                setTasks(unfinished);
+              }}
+            >
+              {" "}
+              Done!{" "}
+            </button>
+          </>
+        ))}
+      </ul>
+    </div>
+  );
+}
