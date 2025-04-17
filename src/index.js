@@ -19,6 +19,7 @@ import FuncSet from "./components/FunctionalSet";
 import SpreadObj from "./components/ObjectsState";
 import Immer from "./components/Immer";
 import ArrayAdd, { ToDoFor, ToDoMap } from "./components/ArraysState";
+import Update from "./components/ArrayUpdate";
 
 //React ovde u root div u index.html renderuje sve ostalo, sve ove komponente koje se pozivaju u okviru render() funkcije.
 //INITIAL RENDER
@@ -47,6 +48,7 @@ root.render(
     <ArrayAdd />
     <ToDoMap />
     <ToDoFor />
+    <Update />
   </>
   //</React.StrictMode>
 );
