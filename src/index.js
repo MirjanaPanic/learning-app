@@ -18,8 +18,7 @@ import Snap2 from "./components/Snap";
 import FuncSet from "./components/FunctionalSet";
 import SpreadObj from "./components/ObjectsState";
 import Immer from "./components/Immer";
-import ArrayAdd from "./components/ArraysState";
-import { ArrayRemove } from "./components/ArraysState";
+import ArrayAdd, { ToDoFor, ToDoMap } from "./components/ArraysState";
 
 //React ovde u root div u index.html renderuje sve ostalo, sve ove komponente koje se pozivaju u okviru render() funkcije.
 //INITIAL RENDER
@@ -46,7 +45,8 @@ root.render(
     <SpreadObj />
     <Immer />
     <ArrayAdd />
-    <ArrayRemove />
+    <ToDoMap />
+    <ToDoFor />
   </>
   //</React.StrictMode>
 );
