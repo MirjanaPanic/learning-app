@@ -20,6 +20,8 @@ import SpreadObj from "./components/ObjectsState";
 import Immer from "./components/Immer";
 import ArrayAdd, { ToDoFor, ToDoMap } from "./components/ArraysState";
 import Update from "./components/ArrayUpdate";
+import Layout from "./components/Layout";
+import HomePage from "./components/HomePage";
 
 //React ovde u root div u index.html renderuje sve ostalo, sve ove komponente koje se pozivaju u okviru render() funkcije.
 //INITIAL RENDER
@@ -49,6 +51,8 @@ root.render(
     <ToDoMap />
     <ToDoFor />
     <Update />
+
+    <HomePage />
   </>
   //</React.StrictMode>
 );

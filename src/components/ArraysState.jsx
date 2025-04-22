@@ -108,6 +108,7 @@ export function ToDoMap() {
 //IMPURE
 let nextIdd = 4; //u bazi id autoincrement.. :)
 export function ToDoFor() {
+  //const [nextId,setNextId]=useState(4); da probam da promenim
   let todo = [
     { id: 0, task: "prepare breakfast", time: "09:00" },
     { id: 1, task: "make a coffee", time: "10:00" },
