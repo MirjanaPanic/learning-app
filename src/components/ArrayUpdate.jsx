@@ -20,6 +20,7 @@ export default function Update() {
         }
       })
     );
+    //console.log(imena); //tek kad se zavrsi handler, moci ce da azurira state, ovde je prethodni render
   }
 
   return (

@@ -105,6 +105,7 @@ export function ToDoMap() {
   );
 }
 
+//IMPURE
 let nextIdd = 4; //u bazi id autoincrement.. :)
 export function ToDoFor() {
   let todo = [
