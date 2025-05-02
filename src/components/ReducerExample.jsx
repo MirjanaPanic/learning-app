@@ -40,9 +40,7 @@ function tasksReducer(tasks, action) {
       return tasks.map((t) => {
         if (t.id === action.id) {
           return { ...t, text: action.text };
-        } else {
-          return t;
-        }
+        } else return t;
       });
     }
     case "delete": {
