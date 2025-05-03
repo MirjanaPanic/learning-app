@@ -7,6 +7,7 @@ export default function Theme() {
   const [theme, setTheme] = useState("light");
 
   //wrapuje decu u Context i postavlja context na theme iz stanja. Klik setuje stanje i menja context
+  //posto se theme menja na klik, to menja i context i svi potomci koji useContext ce se rerenderovati
   return (
     <ThemeContext.Provider value={theme}>
       <>
