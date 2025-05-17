@@ -26,6 +26,7 @@ import Thinking from "./components/Thinking";
 import ReducerTest from "./components/ReducerExample";
 import Theme from "./components/ContextExample";
 import Ref from "./components/Ref";
+import Effect from "./components/Effect";
 
 //React ovde u root div u index.html renderuje sve ostalo, sve ove komponente koje se pozivaju u okviru render() funkcije.
 //INITIAL RENDER
@@ -61,6 +62,8 @@ root.render(
     <ReducerTest />
     <Theme />
     <Ref />
+    
+    <Effect />
   </>
   //</React.StrictMode>
 );

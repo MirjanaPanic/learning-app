@@ -21,8 +21,8 @@ export default function Immer() {
 
   //lakse i brze za ugnjezdene objekte
   function handleTitleChange(e) {
-    updatePerson((draft) => {
-      draft.artwork.title = e.target.value;
+    updatePerson((p) => {
+      p.artwork.title = e.target.value;
     });
   }
 
@@ -67,4 +67,3 @@ export default function Immer() {
     </div>
   );
 }
-
